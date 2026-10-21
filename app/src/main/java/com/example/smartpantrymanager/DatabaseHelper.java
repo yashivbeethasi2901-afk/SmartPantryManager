@@ -45,139 +45,139 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private void insertDefaultRecipes(SQLiteDatabase db) {
 
-        // 1. Tomato Omelette
+        // 1. Spanish Tortilla
         insertRecipe(
                 db,
-                "Tomato Omelette",
-                "A simple omelette made with eggs, tomatoes, onion and cheese.",
-                "egg:2:items,tomato:2:items,onion:1:items,cheese:30:grams",
-                "Beat the eggs. Chop the tomato and onion. Cook the vegetables in a pan, add the eggs, sprinkle with cheese, and cook until set."
+                "Spanish Tortilla",
+                "A thick, golden potato and onion omelette served warm or cold.",
+                "egg:4:items,potato:2:items,onion:1:items,olive oil:40:ml",
+                "Thinly slice the potatoes and onion and cook slowly in olive oil until soft. Beat the eggs, mix in the potato and onion, then pour back into the pan. Cook on low heat until set, flip carefully, and cook the other side until golden."
         );
 
-        // 2. Scrambled Eggs
+        // 2. Honey Garlic Chicken
         insertRecipe(
                 db,
-                "Scrambled Eggs",
-                "Simple creamy scrambled eggs.",
-                "egg:3:items,milk:30:ml,butter:10:grams",
-                "Crack the eggs into a bowl and mix with milk. Melt butter in a pan, add the eggs, and stir gently until cooked."
+                "Honey Garlic Chicken",
+                "Sticky, sweet and savoury chicken pieces glazed in honey and soy.",
+                "chicken:200:grams,garlic:3:items,honey:30:ml,soy sauce:20:ml,olive oil:10:ml",
+                "Cut the chicken into bite-sized pieces and brown in olive oil. Add minced garlic and cook for one minute. Stir in honey and soy sauce and simmer until the sauce thickens and coats the chicken."
         );
 
-        // 3. Cheese Toast
+        // 3. Creamy Mushroom Pasta
         insertRecipe(
                 db,
-                "Cheese Toast",
-                "Crispy toast filled with melted cheese.",
-                "bread:2:items,cheese:50:grams,butter:10:grams",
-                "Butter the bread and add cheese. Toast in a pan or toaster until the bread is golden and the cheese has melted."
+                "Creamy Mushroom Pasta",
+                "Pasta tossed in a rich garlic mushroom cream sauce.",
+                "pasta:200:grams,mushroom:150:grams,garlic:2:items,cream:100:ml,cheese:30:grams,butter:10:grams",
+                "Cook the pasta. Fry sliced mushrooms and garlic in butter until browned. Pour in the cream and simmer for a few minutes, stir in the cheese, then toss with the drained pasta."
         );
 
-        // 4. Tomato Sandwich
+        // 4. Veggie Stir-Fry Noodles
         insertRecipe(
                 db,
-                "Tomato Sandwich",
-                "A quick sandwich made with fresh tomatoes and cheese.",
-                "bread:2:items,tomato:1:items,cheese:30:grams,butter:10:grams",
-                "Slice the tomato. Butter the bread, add tomato and cheese, then close the sandwich and toast if desired."
+                "Veggie Stir-Fry Noodles",
+                "Quick noodles with crunchy vegetables and a soy garlic glaze.",
+                "noodles:200:grams,carrot:1:items,onion:1:items,garlic:2:items,soy sauce:20:ml,olive oil:15:ml",
+                "Boil the noodles and drain. Stir-fry sliced carrot, onion and garlic in hot oil for a few minutes. Add the noodles and soy sauce and toss until everything is evenly coated and hot."
         );
 
-        // 5. Pasta with Tomato Sauce
+        // 5. Avocado Egg Toast
         insertRecipe(
                 db,
-                "Pasta with Tomato Sauce",
-                "Pasta served with a simple tomato and garlic sauce.",
-                "pasta:200:grams,tomato:3:items,onion:1:items,garlic:2:items,olive oil:20:ml",
-                "Cook the pasta. Chop the tomatoes, onion and garlic. Cook them in olive oil until soft, then mix the sauce with the pasta."
+                "Avocado Egg Toast",
+                "Crunchy toast topped with smashed avocado, lemon and a fried egg.",
+                "bread:2:items,avocado:1:items,egg:2:items,lemon:1:items,olive oil:5:ml",
+                "Toast the bread. Mash the avocado with a squeeze of lemon juice and spread it on the toast. Fry the eggs in olive oil and place one on each slice."
         );
 
-        // 6. Egg Fried Rice
+        // 6. Tuna Rice Bowl
         insertRecipe(
                 db,
-                "Egg Fried Rice",
-                "Fried rice with egg and vegetables.",
-                "rice:200:grams,egg:2:items,onion:1:items,carrot:1:items,olive oil:20:ml",
-                "Cook the rice. Fry the onion and carrot in oil, add the eggs and scramble them, then add the cooked rice and stir-fry."
+                "Tuna Rice Bowl",
+                "A fresh rice bowl with creamy tuna, cucumber and soy.",
+                "rice:200:grams,tuna:1:items,cucumber:1:items,soy sauce:15:ml,mayonnaise:15:ml",
+                "Cook the rice and let it cool slightly. Mix the tuna with mayonnaise. Slice the cucumber, then arrange the rice, tuna and cucumber in a bowl and drizzle with soy sauce."
         );
 
-        // 7. Chicken Fried Rice
+        // 7. Cheesy Potato Bake
         insertRecipe(
                 db,
-                "Chicken Fried Rice",
-                "Fried rice with chicken, egg and vegetables.",
-                "rice:200:grams,chicken:150:grams,egg:1:items,onion:1:items,carrot:1:items,olive oil:20:ml",
-                "Cook the rice. Cook the chicken in a pan, then add onion and carrot. Add the egg and cooked rice and stir-fry everything together."
+                "Cheesy Potato Bake",
+                "Layers of sliced potato baked in garlic milk with a golden cheese top.",
+                "potato:4:items,cheese:80:grams,milk:100:ml,butter:15:grams,garlic:1:items",
+                "Slice the potatoes thinly and layer them in a buttered dish. Pour over milk mixed with crushed garlic and cover with cheese. Bake at 180C for about 45 minutes until tender and golden."
         );
 
-        // 8. Chicken Pasta
+        // 8. Lemon Butter Chicken and Rice
         insertRecipe(
                 db,
-                "Chicken Pasta",
-                "Simple pasta with cooked chicken, onion and garlic.",
-                "pasta:200:grams,chicken:150:grams,onion:1:items,garlic:2:items,olive oil:20:ml",
-                "Cook the pasta. Cut and cook the chicken. Fry onion and garlic, add the chicken and pasta, and mix together."
+                "Lemon Butter Chicken and Rice",
+                "Juicy chicken in a bright lemon butter sauce served over rice.",
+                "chicken:150:grams,rice:200:grams,lemon:1:items,butter:20:grams,garlic:2:items",
+                "Cook the rice. Pan-fry the chicken in half the butter until cooked through. Add garlic, the remaining butter and the lemon juice, simmer briefly, and serve over the rice."
         );
 
-        // 9. Banana Pancakes
+        // 9. Banana Oat Bowl
         insertRecipe(
                 db,
-                "Banana Pancakes",
-                "Soft pancakes made with banana, eggs and milk.",
-                "banana:1:items,egg:2:items,flour:100:grams,milk:100:ml",
-                "Mash the banana and mix with eggs, flour and milk. Pour small amounts into a hot pan and cook both sides until golden."
+                "Banana Oat Bowl",
+                "Warm, creamy oats topped with banana and a drizzle of honey.",
+                "oats:80:grams,milk:200:ml,banana:1:items,honey:15:ml",
+                "Heat the oats and milk in a pot, stirring, until thick and creamy. Pour into a bowl, top with sliced banana and drizzle with honey."
         );
 
-        // 10. French Toast
+        // 10. Roasted Tomato Soup
         insertRecipe(
                 db,
-                "French Toast",
-                "Golden bread cooked with an egg and milk mixture.",
-                "bread:2:items,egg:2:items,milk:50:ml,butter:10:grams",
-                "Beat the eggs and milk together. Dip the bread into the mixture, then fry in butter until golden on both sides."
+                "Roasted Tomato Soup",
+                "Smooth, comforting soup made from roasted tomatoes, garlic and basil.",
+                "tomato:5:items,onion:1:items,garlic:2:items,basil:5:grams,cream:50:ml,olive oil:15:ml",
+                "Roast the tomatoes, onion and garlic with olive oil at 200C for 25 minutes. Blend with basil until smooth, warm in a pot, and stir in the cream before serving."
         );
 
-        // 11. Vegetable Rice
+        // 11. Chicken Yogurt Wrap
         insertRecipe(
                 db,
-                "Vegetable Rice",
-                "Rice mixed with simple fried vegetables.",
-                "rice:200:grams,carrot:1:items,onion:1:items,tomato:1:items,olive oil:20:ml",
-                "Cook the rice. Chop the vegetables and fry them in olive oil. Add the cooked rice and mix together."
+                "Chicken Yogurt Wrap",
+                "A tortilla wrap with chicken, cool cucumber and tangy yogurt.",
+                "tortilla:2:items,chicken:100:grams,cucumber:1:items,yogurt:80:grams,tomato:1:items",
+                "Cook and slice the chicken. Slice the cucumber and tomato. Spread yogurt over the tortillas, add the chicken and vegetables, then roll tightly."
         );
 
-        // 12. Tuna Sandwich
+        // 12. Cinnamon Apple Pancakes
         insertRecipe(
                 db,
-                "Tuna Sandwich",
-                "A quick tuna sandwich with tomato and mayonnaise.",
-                "bread:2:items,tuna:1:items,mayonnaise:20:ml,tomato:1:items",
-                "Mix the tuna with mayonnaise. Slice the tomato. Add the tuna mixture and tomato to the bread and serve."
+                "Cinnamon Apple Pancakes",
+                "Fluffy pancakes with grated apple and a warm hint of cinnamon.",
+                "apple:1:items,flour:100:grams,egg:1:items,milk:120:ml,cinnamon:2:grams,butter:10:grams",
+                "Grate the apple and mix with flour, egg, milk and cinnamon into a thick batter. Melt butter in a pan and cook spoonfuls of batter until golden on both sides."
         );
 
-        // 13. Chicken Sandwich
+        // 13. Shakshuka
         insertRecipe(
                 db,
-                "Chicken Sandwich",
-                "A simple chicken sandwich with tomato and cheese.",
-                "bread:2:items,chicken:100:grams,tomato:1:items,cheese:30:grams,mayonnaise:20:ml",
-                "Cook and slice the chicken. Slice the tomato. Add chicken, tomato, cheese and mayonnaise to the bread."
+                "Shakshuka",
+                "Eggs poached in a spiced tomato and onion sauce.",
+                "egg:3:items,tomato:4:items,onion:1:items,garlic:2:items,paprika:3:grams,olive oil:20:ml",
+                "Soften chopped onion and garlic in olive oil. Add chopped tomatoes and paprika and simmer until thick. Make small wells in the sauce, crack in the eggs, cover, and cook until the whites are set."
         );
 
-        // 14. Tomato Pasta
+        // 14. Cheeseburger
         insertRecipe(
                 db,
-                "Tomato Pasta",
-                "Pasta with a simple tomato, garlic and cheese sauce.",
-                "pasta:200:grams,tomato:3:items,garlic:2:items,olive oil:20:ml,cheese:30:grams",
-                "Cook the pasta. Cook the tomatoes and garlic in olive oil to make a sauce. Mix with the pasta and top with cheese."
+                "Cheeseburger",
+                "A classic homemade beef burger with melted cheese and fresh toppings.",
+                "beef:200:grams,bun:2:items,cheese:40:grams,tomato:1:items,onion:1:items",
+                "Shape the beef into two patties and fry for about 4 minutes per side. Add cheese at the end to melt. Slice the tomato and onion, and assemble everything in the buns."
         );
 
-        // 15. Banana French Toast
+        // 15. Garlic Butter Shrimp Pasta
         insertRecipe(
                 db,
-                "Banana French Toast",
-                "French toast topped with fresh banana.",
-                "bread:2:items,banana:1:items,egg:2:items,milk:50:ml,butter:10:grams",
-                "Mash the banana and mix it with eggs and milk. Dip the bread into the mixture and fry in butter until golden."
+                "Garlic Butter Shrimp Pasta",
+                "Pasta with juicy shrimp in a zesty garlic butter sauce.",
+                "pasta:200:grams,shrimp:150:grams,garlic:3:items,butter:20:grams,lemon:1:items",
+                "Cook the pasta. Melt butter in a pan, add garlic and cook briefly, then add the shrimp until pink. Squeeze in the lemon juice, add the pasta, and toss to coat."
         );
     }
 
