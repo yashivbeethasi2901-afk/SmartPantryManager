@@ -1,15 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- Light mode. Put these in res/values/colors.xml (replace the existing app_* entries, keep any others). -->
 <resources>
-
-    <color name="app_background">#FCF9FC</color>
+    <color name="app_background">#FAF7F2</color>
     <color name="app_surface">#FFFFFF</color>
-
-    <color name="app_text">#302A35</color>
-    <color name="app_secondary_text">#6F6872</color>
-
-    <color name="app_primary">#6B4FA8</color>
-
-    <color name="black">#000000</color>
-    <color name="white">#FFFFFF</color>
-
+    <color name="app_text">#1F2A24</color>
+    <color name="app_secondary_text">#6B7A72</color>
+    <color name="app_primary">#2F6B4F</color>
+    <color name="app_on_primary">#FFFFFF</color>
+    <color name="app_primary_light">#DDEBE2</color>
+    <color name="app_on_primary_light">#1F4D38</color>
+    <color name="app_primary_stroke">#C3DACB</color>
+    <color name="app_stroke">#E6E1D8</color>
+    <color name="app_danger">#B3402F</color>
+    <color name="app_danger_light">#FBE4E0</color>
+    <color name="app_danger_stroke">#F2C4BC</color>
 </resources>
