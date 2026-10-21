@@ -171,10 +171,6 @@ public class IngredientAdapter extends RecyclerView.Adapter<IngredientAdapter.In
 
         String name = ingredientName.toLowerCase(Locale.ROOT).trim();
 
-        if (name.equals("banana") || name.equals("bananas")) {
-            return android.graphics.Color.parseColor("#D4A72C");
-        }
-
         if (name.equals("egg") || name.equals("eggs")) {
             return android.graphics.Color.parseColor("#C99A24");
         }
@@ -183,12 +179,64 @@ public class IngredientAdapter extends RecyclerView.Adapter<IngredientAdapter.In
             return android.graphics.Color.parseColor("#C94C4C");
         }
 
-        if (name.equals("chicken")) {
-            return android.graphics.Color.parseColor("#C9783A");
+        if (name.equals("potato") || name.equals("potatoes")) {
+            return android.graphics.Color.parseColor("#A67C52");
+        }
+
+        if (name.equals("onion") || name.equals("onions")) {
+            return android.graphics.Color.parseColor("#8A5A9E");
+        }
+
+        if (name.equals("garlic")) {
+            return android.graphics.Color.parseColor("#7A9A5A");
         }
 
         if (name.equals("carrot") || name.equals("carrots")) {
             return android.graphics.Color.parseColor("#4F8A5B");
+        }
+
+        if (name.equals("mushroom") || name.equals("mushrooms")) {
+            return android.graphics.Color.parseColor("#8C7B6B");
+        }
+
+        if (name.equals("avocado") || name.equals("avocados")) {
+            return android.graphics.Color.parseColor("#5E8C3A");
+        }
+
+        if (name.equals("lemon") || name.equals("lemons")) {
+            return android.graphics.Color.parseColor("#D9C220");
+        }
+
+        if (name.equals("apple") || name.equals("apples")) {
+            return android.graphics.Color.parseColor("#B83A3A");
+        }
+
+        if (name.equals("banana") || name.equals("bananas")) {
+            return android.graphics.Color.parseColor("#D4A72C");
+        }
+
+        if (name.equals("cucumber") || name.equals("cucumbers")) {
+            return android.graphics.Color.parseColor("#3F9A5A");
+        }
+
+        if (name.equals("basil")) {
+            return android.graphics.Color.parseColor("#2E7D4F");
+        }
+
+        if (name.equals("chicken")) {
+            return android.graphics.Color.parseColor("#C9783A");
+        }
+
+        if (name.equals("beef")) {
+            return android.graphics.Color.parseColor("#8E3B2F");
+        }
+
+        if (name.equals("shrimp") || name.equals("prawns")) {
+            return android.graphics.Color.parseColor("#E07A5F");
+        }
+
+        if (name.equals("tuna")) {
+            return android.graphics.Color.parseColor("#5F7F9E");
         }
 
         if (name.equals("cheese")) {
@@ -199,24 +247,72 @@ public class IngredientAdapter extends RecyclerView.Adapter<IngredientAdapter.In
             return android.graphics.Color.parseColor("#5B8DB8");
         }
 
+        if (name.equals("cream")) {
+            return android.graphics.Color.parseColor("#CFC3A5");
+        }
+
+        if (name.equals("yogurt") || name.equals("yoghurt")) {
+            return android.graphics.Color.parseColor("#9FB8D0");
+        }
+
+        if (name.equals("butter")) {
+            return android.graphics.Color.parseColor("#E3C75A");
+        }
+
         if (name.equals("bread")) {
             return android.graphics.Color.parseColor("#9A6842");
+        }
+
+        if (name.equals("bun") || name.equals("buns")) {
+            return android.graphics.Color.parseColor("#B07A45");
+        }
+
+        if (name.equals("tortilla") || name.equals("tortillas")) {
+            return android.graphics.Color.parseColor("#D8B77A");
         }
 
         if (name.equals("pasta")) {
             return android.graphics.Color.parseColor("#7A5A9E");
         }
 
+        if (name.equals("noodles")) {
+            return android.graphics.Color.parseColor("#C9A45C");
+        }
+
         if (name.equals("rice")) {
             return android.graphics.Color.parseColor("#B89B5E");
         }
 
-        if (name.equals("onion") || name.equals("onions")) {
-            return android.graphics.Color.parseColor("#8A5A9E");
+        if (name.equals("oats")) {
+            return android.graphics.Color.parseColor("#BFA67A");
         }
 
-        if (name.equals("garlic")) {
-            return android.graphics.Color.parseColor("#7A9A5A");
+        if (name.equals("flour")) {
+            return android.graphics.Color.parseColor("#C8BFA8");
+        }
+
+        if (name.equals("honey")) {
+            return android.graphics.Color.parseColor("#E0A526");
+        }
+
+        if (name.equals("soy sauce")) {
+            return android.graphics.Color.parseColor("#4A2F27");
+        }
+
+        if (name.equals("mayonnaise")) {
+            return android.graphics.Color.parseColor("#D9D2A0");
+        }
+
+        if (name.equals("olive oil")) {
+            return android.graphics.Color.parseColor("#8A9A3A");
+        }
+
+        if (name.equals("paprika")) {
+            return android.graphics.Color.parseColor("#B5391F");
+        }
+
+        if (name.equals("cinnamon")) {
+            return android.graphics.Color.parseColor("#9C5A32");
         }
 
         // Default colour for other ingredients
