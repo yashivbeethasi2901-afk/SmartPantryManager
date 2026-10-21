@@ -1,47 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="20dp">
 
         <Button
             android:id="@+id/btnBackFromSettings"
+            style="@style/Widget.Material3.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="&lt; Back"
             android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/app_primary"
             android:textAllCaps="false"
             android:minHeight="48dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Settings"
-            android:textSize="28sp"
+            android:textSize="30sp"
             android:textStyle="bold"
-            android:paddingBottom="8dp" />
+            android:textColor="@color/app_primary"
+            android:paddingBottom="4dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Manage your Smart Pantry Manager preferences."
-            android:textSize="16sp"
+            android:textSize="15sp"
+            android:textColor="@color/app_secondary_text"
             android:layout_marginBottom="24dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Preferences"
-            android:textSize="20sp"
+            android:textSize="13sp"
             android:textStyle="bold"
-            android:layout_marginBottom="12dp" />
+            android:textAllCaps="true"
+            android:letterSpacing="0.08"
+            android:textColor="@color/app_secondary_text"
+            android:layout_marginBottom="10dp" />
 
         <!-- Expiry Reminders Row -->
         <LinearLayout
@@ -49,7 +59,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="12dp"
+            android:padding="16dp"
+            android:background="@drawable/recipe_background"
             android:layout_marginBottom="12dp">
 
             <LinearLayout
@@ -63,13 +74,15 @@
                     android:layout_height="wrap_content"
                     android:text="Expiry reminders"
                     android:textSize="17sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/app_text" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Show reminders for ingredients approaching their expiry date."
                     android:textSize="14sp"
+                    android:textColor="@color/app_secondary_text"
                     android:layout_marginTop="4dp" />
 
             </LinearLayout>
@@ -78,6 +91,7 @@
                 android:id="@+id/switchExpiryReminders"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -88,8 +102,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="12dp"
-            android:layout_marginBottom="24dp">
+            android:padding="16dp"
+            android:background="@drawable/recipe_background"
+            android:layout_marginBottom="28dp">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -102,13 +117,15 @@
                     android:layout_height="wrap_content"
                     android:text="Dark mode"
                     android:textSize="17sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/app_text" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Switch between light and dark appearance."
                     android:textSize="14sp"
+                    android:textColor="@color/app_secondary_text"
                     android:layout_marginTop="4dp" />
 
             </LinearLayout>
@@ -117,6 +134,7 @@
                 android:id="@+id/switchDarkMode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -126,15 +144,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="About"
-            android:textSize="20sp"
+            android:textSize="13sp"
             android:textStyle="bold"
-            android:layout_marginBottom="12dp" />
+            android:textAllCaps="true"
+            android:letterSpacing="0.08"
+            android:textColor="@color/app_secondary_text"
+            android:layout_marginBottom="10dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Smart Pantry Manager helps you keep track of your ingredients and find recipes that can be made from your pantry."
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/app_secondary_text"
+            android:padding="16dp"
+            android:background="@drawable/recipe_background" />
 
     </LinearLayout>
 
