@@ -164,11 +164,13 @@ public class SuggestedRecipesActivity extends AppCompatActivity {
         return true;
     }
 
+    // Makes names comparable: lowercase, trimmed and singular
+    // (e.g. "Tomatoes" -> "tomato", "Potatoes" -> "potato", "Eggs" -> "egg")
     private String standardizeName(String name) {
         String low = name.toLowerCase(Locale.ROOT).trim();
 
-        if (low.equals("tomatoes")) return "tomato";
         if (low.endsWith("ies")) return low.substring(0, low.length() - 3) + "y";
+        if (low.endsWith("oes")) return low.substring(0, low.length() - 2);
         if (low.endsWith("s") && !low.endsWith("ss")) return low.substring(0, low.length() - 1);
 
         return low;
